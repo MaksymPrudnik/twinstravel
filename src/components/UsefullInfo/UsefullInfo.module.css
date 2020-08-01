@@ -1,0 +1,62 @@
+.info_section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'txt main_header img_div'
+        'facts facts general_info'
+        'food_img food_img food_img';
+    justify-items: center;
+    align-items: center;
+    border-top: 2px solid black;
+    padding: 10px;
+}
+
+.text_div {
+    grid-area: txt;
+    border: 3px solid green;
+    margin: 10px;
+    padding: 10px;
+}
+.img {
+    align-self: center;
+    grid-area: img_div;
+    width: 100%;
+}
+.main_header {
+    grid-area: main_header;
+}
+.main_info {
+    grid-area: general_info;
+}
+.facts {
+    grid-area: facts;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    width: 100%;
+    list-style: none;
+}
+.facts li {
+    margin: 5px;
+    padding: 5px;
+    border-bottom: 2px solid green;
+    color: green;
+    font-weight: 600;
+}
+.facts li span {
+    font-size: 1.5em;
+    font-weight: 800;
+}
+.food_imgs {
+    width: 100%;
+    grid-area: food_img;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.food_img {
+    max-width: 450px;
+}

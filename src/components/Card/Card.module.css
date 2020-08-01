@@ -1,0 +1,57 @@
+.card {
+    margin: 10px;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #0005;
+    background-color: white;
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: auto;
+    width: 100%;
+}
+
+.short_info {
+    display: flex;
+    justify-content: space-around;
+    color: gray;
+    font-family: monospace;
+    font-size: 1rem;
+}
+.short_info div {
+    margin: 3px;
+}
+
+.card_title {
+    text-align: center;
+}
+
+.price_action {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.price_action button {
+    color: white;
+    background-color: darkblue;
+    padding: 5px 15px;
+    border: 2px solid #2525af;
+    border-radius: 15px;
+}
+.price_action button:hover {
+    background-color: #2525af;
+    border: 2px solid darkblue;
+}
+.price_action button:focus {
+    outline: none;
+}
+
+.card_price {
+    padding: 5px 15px;
+    background-color: rgb(6, 195, 186);
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
