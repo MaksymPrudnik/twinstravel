@@ -1,0 +1,31 @@
+.top_countries_section {
+    width: 100%;
+    background-color: burlywood;
+}
+.top_countries_section h2 {
+    text-align: center;
+}
+
+.top_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.country {
+    margin: 20px;
+    padding: 10px;
+    height: 400px;
+    background-color: chartreuse;
+}
+
+@media (max-width: 700px) {
+    .top_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 300px) {
+    .top_list {
+        grid-template-columns: 1fr;
+    }
+}

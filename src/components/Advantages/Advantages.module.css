@@ -1,0 +1,12 @@
+.advantages_section {
+    width: 100%;
+    background-color: tomato;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.advantage {
+    height: 300px;
+    background-color: black;
+    margin: 30px;
+}
