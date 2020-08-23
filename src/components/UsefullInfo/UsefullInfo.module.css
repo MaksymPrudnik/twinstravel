@@ -53,10 +53,31 @@
     width: 100%;
     grid-area: food_img;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 20px;
 }
 
 .food_img {
+    width: 100%;
     max-width: 450px;
+    margin: 10px;
+}
+
+@media (max-width: 800px) {
+    .info_section {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'main_header'
+        'txt'
+        'img_div'
+        'general_info'
+        'facts'
+        'food_img';
+    }
+}
+@media (max-width: 300px) {
+    .facts {
+        grid-template-columns: 1fr;
+    }
 }

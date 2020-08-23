@@ -7,14 +7,16 @@
     margin: 0 30px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .card_list {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin: 0 10px;
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 350px) {
     .card_list {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin: 0 5px;
     }
 }
